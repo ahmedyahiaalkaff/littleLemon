@@ -1,0 +1,25 @@
+.button {
+  border: 1px solid black;
+  background-color: #F4CE14;
+  padding: 13px 100px;
+  /* margin: 20px 10px; */
+  border-radius: 16px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+  display: inline-block;
+}
+
+.button:active {
+  background-color: #495E57;
+  color: #fff;
+}
+
+.button:disabled {
+  background-color: #EE9972;
+}

@@ -3,7 +3,8 @@ import Nav from './Nav';
 import Logo from './images/logo.svg'
 
 function Header(){
-  return (<header>
+  return (
+  <header>
     <img src={Logo} alt="Logo" />
     <Nav />
   </header>)

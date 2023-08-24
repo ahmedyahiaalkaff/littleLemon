@@ -1,0 +1,71 @@
+.card {
+  display: grid;
+  max-width: 264.667px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 185.25px 1fr 2fr 1fr;
+  grid-template-areas: "img img"
+                       "infoBox infoBox"
+                       "infoBox infoBox"
+                       "infoBox infoBox";
+  
+}
+
+.card img {
+  width: 264.667px;
+  height: 185.258px;
+  border-radius: 16px 16px 0px 0px;
+  border: 1px solid #000;
+  grid-area: img;
+}
+
+.card .infoBox{
+  border: 1px solid #000;
+  background-color: #EDEFEE;
+  grid-area: infoBox;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "title price"
+                       "description description"
+                       "order order";
+  align-items: center;
+}
+
+.card .infoBox h4 {
+  grid-area: title;
+}
+
+.card .infoBox p:first-of-type {
+  grid-area: price;
+  justify-self: end;
+  color: #EE9972;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card .infoBox p:nth-of-type(2) {
+  grid-area: description;
+  color: #495E57;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card .infoBox p:nth-of-type(3) {
+  grid-area: order;
+}
+
+
+/* .infoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.card h4, .card p {
+  margin: 10px 10px;
+}
