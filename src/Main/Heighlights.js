@@ -12,7 +12,7 @@ function Heighlights(){
     </header>
     <article>
       {cardsData.map((c)=>{
-        return <Card title={c.title} price={c.price} description={c.description} imgURL={c.imgURL}/>
+        return <Card title={c.title} price={c.price} description={c.description} imgURL={c.imgURL} key={c.title}/>
       })}
     </article>
   </section>

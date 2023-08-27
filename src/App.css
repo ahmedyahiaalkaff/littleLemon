@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 150vh;
+}
 
 .App {
   text-align: center;
@@ -44,6 +51,7 @@
   /* grid-template-rows: 1fr 6fr 2fr; */
   row-gap: 40px;
   margin-top: 20px;
+
 }
 
 header {
@@ -84,7 +92,7 @@ footer {
 footer nav{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-around;
   flex:6;
@@ -93,7 +101,7 @@ footer nav{
 nav a{
   color: #000;
   /* navbar */
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -108,6 +116,10 @@ nav a:hover{
 
 nav a:active{
   color: #F4CE14;
+}
+
+nav a.active {
+  text-decoration: underline;
 }
 
 .heroSection img{
@@ -153,11 +165,13 @@ h4 {
   grid-row: 1;
 }
 
+
 .heroSection div:nth-child(2){
   grid-column: 1/-1;
   grid-row: 2;
   background-color: #fff;
 }
+
 
 .heroSection div:nth-child(3){
   grid-column: 8/12;
@@ -178,7 +192,7 @@ h4 {
 
 p {
   color: #000;
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -204,4 +218,81 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.testomonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2;
+  column-gap: 20px;
+}
+
+.testomonials h2 {
+  grid-column: 2/ span 2;
+  justify-self: center;
+}
+
+.testomonials .review{
+  grid-row: 2;
+  grid-column: span 1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 20px;
+}
+
+.about div:nth-child(1){
+  grid-column: 1/ span 4;
+  grid-row: 1/span 1;
+}
+
+.about div:nth-child(2){
+  grid-column: 1/ span 4;
+  grid-row: 2/span 1;
+}
+
+.about div:nth-child(3){
+  grid-column: 5/ span 4;
+  grid-row: 2/span 2;
+  margin-top: -100px;
+}
+
+.about div:nth-child(4){
+  grid-column: 6/ span 3;
+  grid-row: 2/span 2;
+  margin-top: 100px;
+}
+
+.about img{
+  width: 267.94px;
+  height: 336px;
+}
+
+.about h3{
+  margin-top: 0px;
+}
+.about h1{
+  margin-bottom: 0px;
+}
+
+footer h4 {
+  color: #495E57;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+footer nav ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+footer nav ul li {
+  margin-top: 5px;
 }

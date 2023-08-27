@@ -1,20 +1,26 @@
+import {Link} from 'react-router-dom';
+
+import Logo from './images/logo.svg'
+import links from './navlinks'
+
 function Footer(){
   return (
   <footer>
-    <img src="" alt="logo" />
+    <img src={Logo} alt="logo" />
     <nav>
       <article>
-        <h3>Doormat Navigation</h3>
+        <h4>Doormat Navigation</h4>
         <ul>
-          <li><a href="#home">Home</a></li>
+        {links.map(l => <li><Link to={l.path} key={l.path}>{l.name}</Link></li>)}
+          {/* <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Reservations</a></li>
           <li><a href="#orderOnline">Order Online</a></li>
-          <li><a href="#login">Login</a></li>
+          <li><a href="#login">Login</a></li> */}
         </ul>
       </article>
       <article>
-        <h3>Contact</h3>
+        <h4>Contact</h4>
         <ul>
           <li><a href="#address">Address</a></li>
           <li><a href="#phoneNumber">Phone Number</a></li>
@@ -22,7 +28,7 @@ function Footer(){
         </ul>
       </article>
       <article>
-        <h3>Social Media</h3>
+        <h4>Social Media</h4>
         <ul>
           <li><a href="#facebook">Facebook</a></li>
           <li><a href="#instagram">Instagram</a></li>
