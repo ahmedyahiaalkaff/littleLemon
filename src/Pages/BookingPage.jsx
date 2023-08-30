@@ -1,9 +1,12 @@
+import Main from "../Main/Main";
+import BookingForm from "../BookingForm";
 
-function BookingPage() {
+
+function BookingPage(props) {
   return (
-    <>
-      <h1>Booking</h1>
-    </>
+    <Main>
+      <BookingForm />
+    </Main>
   )
 }
 

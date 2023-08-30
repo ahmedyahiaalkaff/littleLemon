@@ -11,7 +11,7 @@ function Footer(){
       <article>
         <h4>Doormat Navigation</h4>
         <ul>
-        {links.map(l => <li><Link to={l.path} key={l.path}>{l.name}</Link></li>)}
+        {links.map(l => <li key={l.path}><Link to={l.path}>{l.name}</Link></li>)}
           {/* <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Reservations</a></li>
